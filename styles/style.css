@@ -1,0 +1,43 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #8ed6ff !important;
+}
+
+.jumbotron{
+	background-color: #8ed6ff !important;
+	color:white;
+}
+
+.jumbotron{
+  margin: 0 !important;
+}
+  
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #8ed6ff;
+  color: white;
+  padding: 15px;
+}
+
+#img_header{
+	width: 200px;
+	height: 200px;
+	float: left;
+  clear: both;
+}
+
+.collapse.navbar-collapse li a{
+	font-weight: bold;
+}
+
+.carousel-inner > .item > img {
+  height:426px;
+	width: 240px;
+	margin: 0 auto;
+}
+
+footer{
+	font-weight: bold;
+}
