@@ -41,3 +41,21 @@ footer {
 footer{
 	font-weight: bold;
 }
+
+#img_login{
+	width: 150px;
+	height: 150px;
+}
+
+.modal-content{
+	background-color: #8ed6ff;
+}
+
+.modal-title{
+	color: white;
+	font-weight: bold;
+}
+
+.login{
+	background-color: #8ed6ff;
+}
