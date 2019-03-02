@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Portal Wibu</title>
+	<link rel="shortcut icon" type="image/png" href="images/icon.png" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container" background="images/icon.png">
+
+			<!-- Sumber gambar: http://www.transparentpng.com/cats/anime-boy-1288.html -->
+			<img id="img_header" src="images/icon.png">
+
+			<h1 class="display-4">Portal Wibu</h1>
+			<p class="lead">Once a Wibu, Always a Wibu ~</p>
+		</div>
+	</div>
+	<nav class="navbar navbar-light">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
+				<a class="navbar-brand glyphicon glyphicon-home" href="index.html"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<!-- <li class="active"><a href="#">Home</a></li> -->
+					<li><a href="about.html">About</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#loginModal" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well well-sm">
+							<form class="form-horizontal" action="https://formspree.io/natanhp@protonmail.com" method="post">
+								<fieldset>
+									<legend class="text-center">Contact Us</legend>
+
+									<!-- Name input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="name">Name</label>
+										<div class="col-md-9">
+											<input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+										</div>
+									</div>
+
+									<!-- Email input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="email">Your E-mail</label>
+										<div class="col-md-9">
+											<input id="email" name="email" type="email" placeholder="Your email" class="form-control">
+										</div>
+									</div>
+
+									<!-- Message body -->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="message">Your message</label>
+										<div class="col-md-9">
+											<textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..."
+											 rows="5"></textarea>
+										</div>
+									</div>
+
+									<!-- Form actions -->
+									<div class="form-group">
+										<div class="col-md-12 text-right">
+											<button type="submit" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+<div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+						<div>
+								<img id="img_login" class="center-block" src="images/icon.png">
+						</div>
+						<div>
+								<div class="row">
+									<div class="col-md-6 col-md-offset-3">
+										<div class="well well-sm login">
+											<form class="form-horizontal login" action="https://formspree.io/natanhp@protonmail.com" method="POST">
+												<fieldset>
+													<!-- Email input-->
+													<div class="form-group">
+														<label class="col-md-3 control-label" for="emailLogin">email</label>
+														<div class="col-md-9">
+															<input id="emailLogin" name="emailLogin" type="email" placeholder="Your email" class="form-control">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-md-3 control-label" for="password">Password</label>
+														<div class="col-md-9">
+															<input id="password" name="password" type="password" placeholder="Password" class="form-control">
+														</div>
+													</div>
+													<!-- Form actions -->
+													<div class="form-group">
+														<div class="col-md-12 text-right">
+															<button type="submit" class="btn btn-primary btn-lg center-block"  style="margin: 0 auto;">Login</button>
+														</div>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+	<footer class="container-fluid text-center">
+		<p>Natan Hari Pamungkas 2019</p>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+
+</html>
